@@ -39,12 +39,24 @@ require_once("config.php");
 
 //echo $registro;
 
+
+//Faz a atualizaçao do cadastro
+//$user = new Usuario();
+
+//$user->loadById(5);
+//$user->update("Login", "132");
+
+//echo $user;
+
+
 $user = new Usuario();
 
-$user->loadById(5);
-$user->update("Login", "132");
+$user->loadById(7);
+
+$user->delete();
 
 echo $user;
+
 
 
  ?>
