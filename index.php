@@ -24,9 +24,27 @@ require_once("config.php");
 
 //Carrega um usuario usando um login e senha
 
-$usuario = new Usuario();
-$usuario->login("root", "123456");
+//$usuario = new Usuario();
+//$usuario->login("root", "123456");
 
-echo $usuario;
+//echo $usuario;
+
+
+//Insert de nova usuario
+
+//$registro = new Usuario("dudu", "4554");
+
+
+//$registro->insert();
+
+//echo $registro;
+
+$user = new Usuario();
+
+$user->loadById(5);
+$user->update("Login", "132");
+
+echo $user;
+
 
  ?>
